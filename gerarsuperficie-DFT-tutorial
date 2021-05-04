@@ -1,0 +1,15 @@
+Para gerar uma superficie de um material para calculo de DFT.
+
+Da para começar pelo cif da estrutura, edita e coloca os parametros de rede otimizados da estrutura bulk,
+abre ele no vesta, 
+repetir a estrutura e cortar com planos de corte ou manualmente a superficie.
+
+Salva esses dados em um arquivo xyz. Possivelmente vai ter que usar um script para rodar a estrutura. 
+Depois usar um script para encontrar os valores minimos de cada coordenada, esse valor deve ser 0 0 0  para coincidir com a origem, se nao for faz um shift para a origem.
+
+Descobre tambem os parametros de rede apropriados vendo o dx, dy, dz do cif, e dai da um espacinho extra para a ligacao quimica, ~2angstrom.
+
+Sabendo isso abre a estrutura xyz e exporta um cif dela, esse cif vai estar com parametros de rede dummy que caiba o arquivo e simetria p1. Agora pegando as coordenadas fracionarias anteriores com parametros dummy, multiplica as coordenadas por parametro_dummy/parametro_correto em cada coordenada fracionaria, isso pode ser feito no awk.
+Em seguida coloca os parametros de rede corretos no cif. Ao abrir deve ficar tudo ok. 
+
+Se precisar fazer um matching agora só edita os parametros de rede diretamente, as coordenadas fracionarios continuaram iguais. Abre no VESTA e exporta o xyz com coordenadas em angstrom atualizadas.
