@@ -308,7 +308,7 @@ case $PPtype in
 	ecutrho=$(echo "4*$1" | bc )
 	;;
 	1)
-	ecutrho=$(echo "5*$1" | bc )
+	ecutrho=$(echo "8*$1" | bc )
 	;;
 	2)
 	ecutrho=$(echo "4*$1" | bc )
