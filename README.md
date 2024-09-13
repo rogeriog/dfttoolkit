@@ -27,8 +27,11 @@ Ensure that you have **Python** and **Quantum Espresso** installed on your syste
 ## Scripts Overview
 
 **./submission_scripts**  -- contains scripts to submit a pw.x calculation and also automatizes several postprocessing calculations.
+
 **./structure_editing** -- custom python scripts to edit structures in different ways to feed to Quantum Espresso.
+
 **./plotting_scripts** -- several scripts to plot and analyze the results of the DFT calculations, including PDOS and bandstructures.
+
 **./other_scripts** -- scripts for miscallenous tasks
   
 Feel free to explore the scripts, and refer to the comments within each script for more detailed usage instructions.
