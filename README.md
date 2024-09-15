@@ -1,6 +1,6 @@
 # dfttoolkit
 
-Welcome to **dfttoolkit** – a collection of scripts aimed at assisting with the preparation and processing of Density Functional Theory (DFT) results, specifically tailored for **Quantum Espresso** calculations.
+Welcome to **dfttoolkit** – a collection of scripts aimed at assisting to setup and process Density Functional Theory (DFT) results, specifically tailored for **Quantum Espresso** calculations.
 
 ## Features
 
